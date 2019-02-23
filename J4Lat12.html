@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar JavaScript</title>
+</head>
+<body>
+	<h2>JavaScript Object constructors</h2>
+	<p id="demo"></p>
+
+	<script>
+		function Person (first, last, age, eye){
+			this.firstName =first;
+			this.lastName = last;
+			this.age = age;
+			this.eyeColour = eye;
+		}
+
+		var myFather = new Person("John","Doe", 50, "blue");
+		"My father is "+ myFather.age+",";
+	</script>
+</body>
+</html>

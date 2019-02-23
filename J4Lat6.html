@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar JavaScript</title>
+</head>
+<body>
+	<h2>JavaScript Object Properties</h2>
+	<p>You can delete object properties.</p>
+	<p id="demo"></p>
+
+	<script>
+		var person = {
+		firstName:"John",
+		lastName:"Doe",
+		age :50,
+		eyeColour:" blue"
+		};
+		delete person age;
+		document.getElementById("demo").innerHTML = person.firstName + " is "+ ",";
+	</script>
+</body>
+</html>

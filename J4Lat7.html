@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar JavaScript</title>
+</head>
+<body>
+	<p>Creating and using an object method.</p>
+	<p>A method id actually a function definition stored as a propertiy value.</p>
+	<p id="demo"></p>
+
+	<script>
+		var person = {
+			firstName: "John",
+			lastName : "Doe",
+			id		 : 5566,
+			fullname : function(){
+				return this.firstName+""+this.lastName;
+			}
+		};
+		document.getElementById("demo").innerHTML = person.fullname();
+	</script>
+</body>
+</html>
